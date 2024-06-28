@@ -1,0 +1,646 @@
+import urllib.request as request
+import json
+from pathlib import Path
+
+WORDS_API = (
+    "https://raw.githubusercontent.com/dwyl/english-words/master/words_dictionary.json"
+)
+
+words = json.load(request.urlopen(WORDS_API))
+for extra in """
+userdata
+2D
+3D
+voxel
+webhook
+webpage
+wishlist
+skybox
+respawn
+roblox
+adornee
+affordance
+laggy
+lifecycle
+microgame
+unmute
+upvalue
+prebuilt
+powerups
+ragdoll
+ramen
+rawset
+treehouse
+UTF-8
+codebase
+Vistech
+anonymized
+globals
+raycasting
+aspirational
+roleplay
+teleporter
+typechecking
+leaderboard
+powerup
+checkboxes
+csv
+leaderstat
+config
+VFXUpdateModule
+glitchy
+topbar
+positionally
+debounce
+codebase
+debouncing
+diegetic
+fanbase
+scrollbar
+wireframe
+respawns
+trackpad
+diegetically
+validator
+elseif
+sci-fi
+downvote
+ungroup
+worldsteps
+worldstep
+rbxthumb
+metamethod
+dropdown
+unequip
+waypoint
+Minecraft
+pcall
+hitbox
+grayscale
+enum
+cyber
+backend
+SHA-256
+rthro
+rojo
+robux
+rbxasset
+rbxassetid
+rbxhttp
+retopologize
+griefing
+uncopylocked
+uncomment
+unchecking
+strikethrough
+Stravant
+src
+cooldown
+CFrame
+autocomplete
+autocompletion
+playstation
+walkthrough
+raycast
+reimagining
+signup
+textbox
+tweening
+tweened
+UIAspectRatioConstraint
+UICorner
+UIGradient
+UIGridLayout
+UIHandler
+UIListLayout
+UIListLayouts
+UIPadding
+UIPageLayout
+UIs
+UIScale
+UISizeConstraint
+UIStroke
+UITableLayout
+UITextSizeConstraint
+UITweenModule
+UX/UI
+royales
+gamified
+img
+http
+https
+incentivize
+incentivized
+inclusivity
+instantiable
+int64
+lil
+lua
+metatable
+metatables
+mp4
+mov
+obby
+npcs
+""".splitlines():
+    words[extra.strip().lower()] = 1
+
+def word_exists(word):
+    return word.strip().lower() in words
+
+
+assert word_exists("tomato")
+assert word_exists("banana")
+assert word_exists("red")
+assert word_exists("car")
+
+concat = ""
+pathlist = Path("../").rglob('*.md')
+for path in pathlist:
+    with path.open() as file:
+        content = file.read()
+        concat += content
+concat_lower = concat.lower()
+
+for to_check in [
+    "½",
+    "⅓",
+    "¼",
+    "⅔",
+    "2D",
+    "3D",
+    "accelerometers",
+    "accomodate",
+    "adornee",
+    "affordance",
+    "albedo",
+    "algorithmically",
+    "ambience",
+    "amidst",
+    "amongst",
+    "animatable",
+    "anonymized",
+    "APIs",
+    "aspirational",
+    "async",
+    "autocomplete",
+    "autocompletion",
+    "autosaving",
+    "avatar",
+    "axe",
+    "backend",
+    "backfaces",
+    "backoff",
+    "balconette",
+    "baseplate",
+    "benchmarking",
+    "bindable",
+    "biome",
+    "bitwise",
+    "blocklist",
+    "blockout",
+    "blockouts",
+    "blocky",
+    "bool",
+    "booleans",
+    "breakpoint",
+    "bundler",
+    "café",
+    "cancelled",
+    "cartoonish",
+    "casted",
+    "CFrame",
+    "chatbots",
+    "checkboxes",
+    "checkmark",
+    "chipset",
+    "cmd",
+    "codebase",
+    "codespaces",
+    "collidable",
+    "color3",
+    "colormap",
+    "colormaps",
+    "colorspace",
+    "comparator",
+    "completable",
+    "completionist",
+    "config",
+    "cooldown",
+    "coroutine",
+    "criterions",
+    "crossfading",
+    "crosshair",
+    "cryptographic",
+    "cryptographically",
+    "csv",
+    "ctrl",
+    "cubemap",
+    "customizable",
+    "customizations",
+    "cutscene",
+    "cutscenes",
+    "cyber",
+    "cyberbullying",
+    "datapoint",
+    "debounce",
+    "debouncing",
+    "decompile",
+    "deformer",
+    "descendent",
+    "deserialization",
+    "deserializes",
+    "destructor",
+    "desynchronization",
+    "dialogs",
+    "diegetic",
+    "diegetically",
+    "digitalsake",
+    "directionality",
+    "discernable",
+    "discoverability",
+    "discoverable",
+    "doppler",
+    "downvote",
+    "draggable",
+    "dragger",
+    "dragger's",
+    "draggers",
+    "dropdown",
+    "durations",
+    "Duvall",
+    "elseif",
+    "elseif's",
+    "embeddable",
+    "emissive",
+    "endgroup",
+    "enum",
+    "equipt",
+    "Esc",
+    "eyeshadow",
+    "fanbase",
+    "fbx",
+    "ferris",
+    "fishman",
+    "flipbook",
+    "flipbooks",
+    "flyer",
+    "formatter",
+    "framerate",
+    "framerates",
+    "fresnel",
+    "gamepad",
+    "gameplay",
+    "gamified",
+    "gaussian",
+    "geo",
+    "glitchy",
+    "globals",
+    "golem",
+    "grabbable",
+    "graybox",
+    "grayboxed",
+    "grayboxing",
+    "grayscale",
+    "grey",
+    "gridlines",
+    "griefing",
+    "halloween",
+    "hardpoint",
+    "hardscape",
+    "harvestable",
+    "headshot",
+    "heightmap",
+    "heightmaps",
+    "high-waisted",
+    "HingeConstraint",
+    "hitbox",
+    "hotbar",
+    "hotspots",
+    "http",
+    "https",
+    "IKControl",
+    "IKControls",
+    "img",
+    "impactful",
+    "imposter",
+    "incentivize",
+    "incentivized",
+    "inclusivity",
+    "influencer",
+    "infringers",
+    "instantiable",
+    "int64",
+    "integrations",
+    "interactable",
+    "interpolants",
+    "invoker",
+    "ipair",
+    "jumpstart",
+    "keybinds",
+    "keycode",
+    "keyframe",
+    "keyname",
+    "keypoint",
+    "keypose",
+    "keypress",
+    "kickstart",
+    "KPIs",
+    "labelled",
+    "laggy",
+    "layerable",
+    "leaderboard",
+    "leaderstat",
+    "lerp",
+    "lifecycle",
+    "Lil",
+    "limiteds",
+    "livestreams",
+    "localhost",
+    "localizations",
+    "lockpick",
+    "logpoint",
+    "lookups",
+    "lua",
+    "MacOS",
+    "maya",
+    "merch",
+    "metalness",
+    "metamethod",
+    "metatable",
+    "metatables",
+    "microgame",
+    "microsurface",
+    "millenia",
+    "Minecraft",
+    "minigame",
+    "minimap",
+    "misidentification",
+    "mockup",
+    "mockups",
+    "moonbase",
+    "Motor6D",
+    "mouselock",
+    "mov",
+    "moveable",
+    "mp4",
+    "multicolor",
+    "multiline",
+    "multitaskers",
+    "multithreaded",
+    "multithreading",
+    "namespaces",
+    "natively",
+    "netmask",
+    "nocked",
+    "nonatomic",
+    "noncompliant",
+    "nonplayable",
+    "normals",
+    "NPC's",
+    "NPCs",
+    "obby",
+    "obbys",
+    "observability",
+    "octahedral",
+    "octants",
+    "omnidirectional",
+    "onboarding",
+    "outliner",
+    "outsized",
+    "overdriving",
+    "pallette",
+    "params",
+    "passholders",
+    "pathfind",
+    "pathfinding",
+    "pcall",
+    "performant",
+    "permissioned",
+    "photogrammetry",
+    "photorealistic",
+    "platformer",
+    "playability",
+    "playerholder",
+    "Playfab",
+    "playhead",
+    "PlayStation",
+    "playstyles",
+    "playtest",
+    "playtested",
+    "playtesting",
+    "pointlights",
+    "polycount",
+    "posable",
+    "poseable",
+    "positionally",
+    "postfix",
+    "powerup",
+    "powerups",
+    "prebuilt",
+    "preconfigured",
+    "premade",
+    "prepends",
+    "preproduction",
+    "procedurally",
+    "profiler",
+    "programmatically",
+    "quaternion",
+    "queueing",
+    "racerback",
+    "ragdoll",
+    "rainforest",
+    "ramen",
+    "rawset",
+    "raycast",
+    "raycasters",
+    "raycasting",
+    "rbxasset",
+    "rbxassetid",
+    "rbxhttp",
+    "rbxthumb",
+    "reactiveness",
+    "redeclare",
+    "redeclares",
+    "redirections",
+    "reenable",
+    "reflectiveness",
+    "reimagine",
+    "reimagining",
+    "renderer",
+    "replicable",
+    "repositioned",
+    "repositions",
+    "rescale",
+    "rescaling",
+    "reselect",
+    "resellable",
+    "reskinning",
+    "respawn",
+    "respawned",
+    "respawning",
+    "respawns",
+    "restorable",
+    "retext",
+    "retopologize",
+    "retopologized",
+    "retopologizing",
+    "roblox",
+    "Roblox",
+    "robux",
+    "Robux",
+    "Rojo",
+    "roleplay",
+    "roleplaying",
+    "royale",
+    "royales",
+    "Rthro",
+    "scalable",
+    "schema",
+    "schemas",
+    "sci-fi",
+    "scripter",
+    "scrollbar",
+    "selectable",
+    "SHA-256",
+    "shader",
+    "shaders",
+    "sharable",
+    "sharding",
+    "shoppable",
+    "sidechain",
+    "sidechained",
+    "sidechains",
+    "signalled",
+    "signup",
+    "skippable",
+    "skybox",
+    "skyscape",
+    "slimes",
+    "softwares",
+    "sonically",
+    "soundbed",
+    "spacebar",
+    "spaceyard",
+    "spawner",
+    "specular",
+    "sponsorship",
+    "src",
+    "stateful",
+    "strategize",
+    "Stravant",
+    "streamable",
+    "strikethrough",
+    "subclasses",
+    "subfolder",
+    "subimage",
+    "sublicensable",
+    "substring",
+    "subtab",
+    "superclass",
+    "superset",
+    "swappable",
+    "syntaxes",
+    "takedown",
+    "teleport",
+    "teleportations",
+    "teleported",
+    "teleporter",
+    "teleporting",
+    "textarea",
+    "textbox",
+    "thruster",
+    "thumbstick",
+    "tileable",
+    "timeframe",
+    "timeframes",
+    "timestep",
+    "timestepping",
+    "tooltip",
+    "topbar",
+    "trackpad",
+    "tradeable",
+    "tradeoffs",
+    "transcode",
+    "traversable",
+    "treehouse",
+    "tween",
+    "tweened",
+    "tweening",
+    "typechecking",
+    "UIAspectRatioConstraint",
+    "UICorner",
+    "UIGradient",
+    "UIGridLayout",
+    "UIHandler",
+    "UIListLayout",
+    "UIListLayouts",
+    "UIPadding",
+    "UIPageLayout",
+    "UIPageLayouts",
+    "UIs",
+    "UIScale",
+    "UISizeConstraint",
+    "UIStroke",
+    "UITableLayout",
+    "UITextSizeConstraint",
+    "UITweenModule",
+    "unanchored",
+    "unanchoring",
+    "uncheck",
+    "unchecking",
+    "uncomment",
+    "uncopylocked",
+    "undefined",
+    "unequip",
+    "ungroup",
+    "unharvestable",
+    "unhide",
+    "unioned",
+    "unmute",
+    "unmuted",
+    "unoptimized",
+    "untagged",
+    "unwalkable",
+    "unweld",
+    "upstander",
+    "upvalue",
+    "useable",
+    "userdata",
+    "UTF-8",
+    "UVs",
+    "UX/UI",
+    "validator",
+    "variadic",
+    "verifier",
+    "VFXUpdateModule",
+    "viewability",
+    "viewport",
+    "Vistech",
+    "voxel",
+    "walkable",
+    "walkspeed",
+    "walkthrough",
+    "warbly",
+    "watertightness",
+    "waypoint",
+    "webhook",
+    "webpage",
+    "whitespace",
+    "wireframe",
+    "wishlist",
+    "workspaces",
+    "worldstep",
+    "worldsteps",
+    "yieldable"
+  ]:
+    exists = word_exists(to_check)
+    used = (to_check.lower()) in concat_lower
+    if not exists and used:
+        #print("Probably wrong", to_check)
+        pass
+    elif exists and not used:
+        #print("This word is correct and used", to_check)
+        pass
+    elif not exists and not used:
+        print("This word is incorrect and not used", to_check)
