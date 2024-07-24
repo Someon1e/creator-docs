@@ -121,17 +121,15 @@ local ReactRoblox = require(ReplicatedStorage.Packages["react-roblox"])
 local handle = Instance.new("ScreenGui", Players.LocalPlayer.PlayerGui)
 local root = ReactRoblox.createRoot(handle)
 
-local helloFrame = React.createElement(
-    "TextLabel", {
-        Text = "Hello World!",
-        Size = UDim2.new(0, 200, 0, 200),
-        Position = UDim2.new(0.5, 0, 0.5, 0),
-        AnchorPoint = Vector2.new(0.5, 0.5),
-        BackgroundColor3 = Color3.fromRGB(248, 217, 109),
-        Font = Enum.Font.LuckiestGuy,
-        TextSize = 24
-    }
-)
+local helloFrame = React.createElement("TextLabel", {
+	Text = "Hello World!",
+	Size = UDim2.new(0, 200, 0, 200),
+	Position = UDim2.new(0.5, 0, 0.5, 0),
+	AnchorPoint = Vector2.new(0.5, 0.5),
+	BackgroundColor3 = Color3.fromRGB(248, 217, 109),
+	Font = Enum.Font.LuckiestGuy,
+	TextSize = 24
+})
 
 root:render(helloFrame)
 ```
@@ -153,7 +151,7 @@ You might also consider adding:
 - A linter like [selene](https://github.com/Kampfkarren/selene) to catch common issues and enforce coding standards
 - A code formatter like [StyLua](https://github.com/JohnnyMorganz/StyLua)
 - A language server like [Luau Language Server](https://github.com/JohnnyMorganz/luau-lsp) for autocompletion, type checking, and more
-- [Open Cloud](https://create.roblox.com/docs/cloud/open-cloud) scripts (not synced to Studio) to [update a published experience](https://create.roblox.com/docs/cloud/reference/Universe#Update-Universe) or [restart servers](https://create.roblox.com/docs/cloud/reference/Universe#Restart-Universe-Servers)
+- [Open Cloud](../cloud/open-cloud/index.md) scripts (not synced to Studio) to [update a published experience](/cloud/reference/Universe#Update-Universe) or [restart servers](/cloud/reference/Universe#Restart-Universe-Servers)
 
 ## Assets
 
