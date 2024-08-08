@@ -470,6 +470,11 @@ navigation:
         type: engineapi
         source: /reference/engine/classes/ChangeHistoryService.yaml
         ignoreTranslation: true
+      - title: ChannelTabsConfiguration
+        path: /reference/engine/classes/ChannelTabsConfiguration
+        type: engineapi
+        source: /reference/engine/classes/ChannelTabsConfiguration.yaml
+        ignoreTranslation: true
       - title: CharacterAppearance
         path: /reference/engine/classes/CharacterAppearance
         type: engineapi
@@ -1109,6 +1114,11 @@ navigation:
         path: /reference/engine/classes/Hat
         type: engineapi
         source: /reference/engine/classes/Hat.yaml
+        ignoreTranslation: true
+      - title: HeatmapService
+        path: /reference/engine/classes/HeatmapService
+        type: engineapi
+        source: /reference/engine/classes/HeatmapService.yaml
         ignoreTranslation: true
       - title: HeightmapImporterService
         path: /reference/engine/classes/HeightmapImporterService
@@ -3553,6 +3563,11 @@ navigation:
         type: engineapi
         source: /reference/engine/enums/ClientAnimatorThrottlingMode.yaml
         ignoreTranslation: true
+      - title: CloseReason
+        path: /reference/engine/enums/CloseReason
+        type: engineapi
+        source: /reference/engine/enums/CloseReason.yaml
+        ignoreTranslation: true
       - title: CollaboratorStatus
         path: /reference/engine/enums/CollaboratorStatus
         type: engineapi
@@ -4158,6 +4173,11 @@ navigation:
         type: engineapi
         source: /reference/engine/enums/LoadDynamicHeads.yaml
         ignoreTranslation: true
+      - title: LocationType
+        path: /reference/engine/enums/LocationType
+        type: engineapi
+        source: /reference/engine/enums/LocationType.yaml
+        ignoreTranslation: true
       - title: MarketplaceBulkPurchasePromptStatus
         path: /reference/engine/enums/MarketplaceBulkPurchasePromptStatus
         type: engineapi
@@ -4668,6 +4688,11 @@ navigation:
         type: engineapi
         source: /reference/engine/enums/ScrollingDirection.yaml
         ignoreTranslation: true
+      - title: SecurityCapability
+        path: /reference/engine/enums/SecurityCapability
+        type: engineapi
+        source: /reference/engine/enums/SecurityCapability.yaml
+        ignoreTranslation: true
       - title: SelectionBehavior
         path: /reference/engine/enums/SelectionBehavior
         type: engineapi
@@ -5032,6 +5057,11 @@ navigation:
         path: /reference/engine/enums/TweenStatus
         type: engineapi
         source: /reference/engine/enums/TweenStatus.yaml
+        ignoreTranslation: true
+      - title: UIDragDetectorBoundingBehavior
+        path: /reference/engine/enums/UIDragDetectorBoundingBehavior
+        type: engineapi
+        source: /reference/engine/enums/UIDragDetectorBoundingBehavior.yaml
         ignoreTranslation: true
       - title: UIDragDetectorDragRelativity
         path: /reference/engine/enums/UIDragDetectorDragRelativity
