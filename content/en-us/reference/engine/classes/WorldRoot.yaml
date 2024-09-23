@@ -99,7 +99,7 @@ methods:
         default: RaycastParams{IgnoreWater=false, BruteForceAllSlow=false, RespectCanCollide=false, CollisionGroup=Default, FilterDescendantsInstances={}}
         summary: ''
     returns:
-      - type: RaycastResult
+      - type: RaycastResult?
         summary: |
           Contains the result of the shapecast operation, or `nil` if no
           eligible `Class.BasePart` or `Class.Terrain` cell was hit.
@@ -504,7 +504,7 @@ methods:
           The size of the given box volume to be queried.
       - name: overlapParams
         type: OverlapParams
-        default: OverlapParams{MaxParts=false, BruteForceAllSlow=false, RespectCanCollide=false, CollisionGroup=Default, FilterDescendantsInstances={}}
+        default: OverlapParams{MaxParts=0, Tolerance=0, BruteForceAllSlow=false, RespectCanCollide=false, CollisionGroup=Default, FilterDescendantsInstances={}}
         summary: |
           Contains reusable portions of the spatial query parameters.
     returns:
@@ -552,7 +552,7 @@ methods:
           The radius of the given sphere volume to be queried.
       - name: overlapParams
         type: OverlapParams
-        default: OverlapParams{MaxParts=false, BruteForceAllSlow=false, RespectCanCollide=false, CollisionGroup=Default, FilterDescendantsInstances={}}
+        default: OverlapParams{MaxParts=0, Tolerance=0, BruteForceAllSlow=false, RespectCanCollide=false, CollisionGroup=Default, FilterDescendantsInstances={}}
         summary: |
           Contains reusable portions of the spatial query parameters.
     returns:
@@ -599,7 +599,7 @@ methods:
           The part whose volume is to be checked against other parts.
       - name: overlapParams
         type: OverlapParams
-        default: OverlapParams{MaxParts=false, BruteForceAllSlow=false, RespectCanCollide=false, CollisionGroup=Default, FilterDescendantsInstances={}}
+        default: OverlapParams{MaxParts=0, Tolerance=0, BruteForceAllSlow=false, RespectCanCollide=false, CollisionGroup=Default, FilterDescendantsInstances={}}
         summary: |
           Contains reusable portions of the spatial query parameters.
     returns:
@@ -845,7 +845,7 @@ methods:
           not provided, default values are used where all parts are considered
           and `Class.Terrain` water is not ignored.
     returns:
-      - type: RaycastResult
+      - type: RaycastResult?
         summary: |
           Contains the results of a raycast operation, or `nil` if no eligible
           `Class.BasePart` or `Class.Terrain` cell was hit.
@@ -871,7 +871,7 @@ methods:
         default: RaycastParams{IgnoreWater=false, BruteForceAllSlow=false, RespectCanCollide=false, CollisionGroup=Default, FilterDescendantsInstances={}}
         summary: ''
     returns:
-      - type: RaycastResult
+      - type: RaycastResult?
         summary: ''
     tags: []
     deprecation_message: ''
@@ -925,7 +925,7 @@ methods:
         default: RaycastParams{IgnoreWater=false, BruteForceAllSlow=false, RespectCanCollide=false, CollisionGroup=Default, FilterDescendantsInstances={}}
         summary: ''
     returns:
-      - type: RaycastResult
+      - type: RaycastResult?
         summary: |
           Contains the result of the shapecast operation, or `nil` if no
           eligible `Class.BasePart` or `Class.Terrain` cell was hit.

@@ -96,18 +96,6 @@ The following beta features are currently available to all users through Studio'
 
 <Card variant="outlined" style={{height: '100%'}}>
 <CardContent style={{paddingBottom: '0px'}}>
-<Button href="../studio/material-generator.md" size="large" color="primaryBrand" variant="outlined" fullWidth>Material Generator</Button>
-<p></p>
-<CardMedia component="img" image="../assets/studio/beta/Material-Generator.png" />
-<p></p>
-<figcaption>Enables the [Material Generator](../studio/material-generator.md) which allows you to generate PBR materials using text input.</figcaption>
-<p></p>
-<BetaAlert betaName="Material Generator" leadIn="" leadOut="" components={props.components} />
-</CardContent>
-</Card>
-
-<Card variant="outlined" style={{height: '100%'}}>
-<CardContent style={{paddingBottom: '0px'}}>
 <Button href="../art/accessories/layered-clothing.md" size="large" color="primaryBrand" variant="outlined" fullWidth>Multilayer Wrap Fix</Button>
 <p></p>
 <CardMedia component="img" image="../assets/studio/beta/Multilayer-Wrap-Fix.jpg" />
@@ -127,18 +115,6 @@ The following beta features are currently available to all users through Studio'
 <figcaption>Enables new instances for customizing, processing, and routing sounds or voices within the engine.</figcaption>
 <p></p>
 <BetaAlert betaName="New Audio API" leadIn="" leadOut="" components={props.components} />
-</CardContent>
-</Card>
-
-<Card variant="outlined" style={{height: '100%'}}>
-<CardContent style={{paddingBottom: '0px'}}>
-<Button href="../parts/materials.md#base-materials" size="large" color="primaryBrand" variant="outlined" fullWidth>New Base Materials</Button>
-<p></p>
-<CardMedia component="img" image="../assets/studio/beta/New-Base-Materials.png" />
-<p></p>
-<figcaption>Adds 8 new [base materials](../parts/materials.md#base-materials) to the engine, including carpet, clay roof tiles, leather, plaster, and more.</figcaption>
-<p></p>
-<BetaAlert betaName="New Base Materials" leadIn="" leadOut="" components={props.components} />
 </CardContent>
 </Card>
 
@@ -168,18 +144,6 @@ The following beta features are currently available to all users through Studio'
 
 <Card variant="outlined" style={{height: '100%'}}>
 <CardContent style={{paddingBottom: '0px'}}>
-<Button href="../studio/test-tab.md#pausing--resuming-physics" size="large" color="primaryBrand" variant="outlined" fullWidth>Simulation Pause and Step</Button>
-<p></p>
-<CardMedia component="img" image="../assets/studio/beta/Simulation-Pause.jpg" />
-<p></p>
-<figcaption>Enables visual pausing and simulation debugging at Studio runtime.</figcaption>
-<p></p>
-<BetaAlert betaName="Simulation Pause and Step" leadIn="" leadOut="" components={props.components} />
-</CardContent>
-</Card>
-
-<Card variant="outlined" style={{height: '100%'}}>
-<CardContent style={{paddingBottom: '0px'}}>
 <Button href="../studio/texture-generator.md" size="large" color="primaryBrand" variant="outlined" fullWidth>Texture Generator</Button>
 <p></p>
 <CardMedia component="img" image="../assets/studio/beta/Texture-Generator.png" />
@@ -192,11 +156,23 @@ The following beta features are currently available to all users through Studio'
 
 <Card variant="outlined" style={{height: '100%'}}>
 <CardContent style={{paddingBottom: '0px'}}>
+<Button href="https://create.roblox.com/docs/ui/ui-drag-detectors" size="large" color="primaryBrand" variant="outlined" fullWidth>UIDragDetectors</Button>
+<p></p>
+<CardMedia component="video" controls src="../assets/ui/ui-drag-detectors/Showcase.mp4" />
+<p></p>
+<figcaption>Enables click-drag-release interactions for UI elements.</figcaption>
+<p></p>
+<BetaAlert betaName="UIDragDetectors" leadIn="" leadOut="" components={props.components} />
+</CardContent>
+</Card>
+
+<Card variant="outlined" style={{height: '100%'}}>
+<CardContent style={{paddingBottom: '0px'}}>
 <Button href="https://devforum.roblox.com/t/studio-beta-for-experience-controls-available-now/2567355" size="large" color="primaryBrand" variant="outlined" fullWidth>Updated Roblox Controls</Button>
 <p></p>
 <CardMedia component="img" image="../assets/studio/beta/Roblox-Controls.jpg" />
 <p></p>
-<figcaption>Enables a modernized Roblox menu and related APIs for seamless UI placement of key system controls.</figcaption>
+<figcaption>Enables a modernized Roblox menu and related APIs.</figcaption>
 <p></p>
 <BetaAlert betaName="Updated Roblox Controls" leadIn="" leadOut="" components={props.components} />
 </CardContent>
@@ -208,7 +184,7 @@ The following beta features are currently available to all users through Studio'
 <p></p>
 <CardMedia component="img" image="../assets/studio/beta/Video-Uploads.png" />
 <p></p>
-<figcaption>Enables video uploads through the [Asset Manager](../projects/assets/manager.md) for eligible users.</figcaption>
+<figcaption>Enables video uploads through the [Asset Manager](../projects/assets/manager.md).</figcaption>
 <p></p>
 <BetaAlert betaName="Video Uploads" leadIn="" leadOut="" components={props.components} />
 </CardContent>

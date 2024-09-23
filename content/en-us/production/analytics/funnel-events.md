@@ -3,7 +3,7 @@ title: Funnel Events
 description: Use funnel events to visualize user progression through key milestones in your experience.
 ---
 
-Funnel events let you track your user's progress through key stages of your experience. This includes:
+**Funnel events** let you track your user's progress through key stages of your experience. This includes:
 
 - **Onboarding** - Where do users drop off when getting started with your experience?
 - **Progression** - Where do users stop advancing through your experience?
@@ -171,6 +171,14 @@ end
 
 onboardingEvent.OnServerEvent:Connect(onPlayerEventFired)
 ```
+
+## Using Custom Fields
+
+Funnel events also allow breaking down on custom fields to support easier comparison between segments. For example, you can track which starter car gives players the best progression, or attach different maps to see if a certain map has a better game loop than others.
+
+<img src="../../assets/analytics/event-types/Custom-Event-Breakdown.png" width = "40%" alt="A dropdown indicating the three custom fields you can compare across, along with standard breakdowns like age, gender, operating system and more."/>
+
+For more information, see [custom fields](./custom-fields.md).
 
 ## Using Funnels to Grow Your Experience
 

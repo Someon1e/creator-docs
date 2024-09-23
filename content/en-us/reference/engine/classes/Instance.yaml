@@ -22,8 +22,8 @@ deprecation_message: ''
 properties:
   - name: Instance.Archivable
     summary: |
-      Determines if an `Class.Instance` can be cloned using
-      `Class.Instance:Clone()`, or when saved/published.
+      Determines if an `Class.Instance` and its descendants can be cloned using
+      `Class.Instance:Clone()`, and can be saved/published.
     description: |
       This property determines whether the instance should be included when the
       experience is published or saved, or when `Class.Instance:Clone()|Clone()`
@@ -1111,6 +1111,22 @@ methods:
       - type: RBXScriptSignal
         summary: |
           A signal that fires whenever the property changes.
+    tags: []
+    deprecation_message: ''
+    security: None
+    thread_safety: Unsafe
+  - name: Instance:GetStyled
+    summary: ''
+    description: ''
+    code_samples: []
+    parameters:
+      - name: name
+        type: string
+        default:
+        summary: ''
+    returns:
+      - type: Variant
+        summary: ''
     tags: []
     deprecation_message: ''
     security: None

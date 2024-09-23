@@ -71,7 +71,7 @@ client, or have them communicate across the network boundary.
 - A `Class.LocalScript` object represents a script that can only run on the
   client.
 - A `Class.ModuleScript` object represents a reusable script that you can
-  `Global.RobloxGlobals.require()` from both
+  `Global.LuaGlobals.require()` from both
   server and client scripts.
 
 For scripts to behave properly, you must place them in the correct containers in
@@ -323,7 +323,7 @@ For more information, see [In-Experience Text Chat System](../chat/in-experience
 feature that simulates realistic communication based on how close you are to
 other users. You can use this service to toggle the feature on and off.
 
-For more information, see [Chat with Voice](../chat/voice-chat.md).
+For more information, see [Voice Chat](../chat/voice-chat.md).
 
 ## Folders and Models
 

@@ -16,7 +16,7 @@ items:
     value: 1
     tags: []
     deprecation_message: ''
-  - name: Experimental
+  - name: Enabled
     summary: ''
     value: 2
     tags: []

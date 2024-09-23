@@ -11,6 +11,7 @@ Roblox's goal is to enable the creation of anything, anywhere, by anyone, and we
   - [Immersive Ads](#immersive-ads)
 - [Creating, Selling, and Reselling Avatar Items](#creating-selling-and-reselling-avatar-items)
 - [Creating and Selling Studio Plugins](#creating-and-selling-studio-plugins)
+- [Joining the Creator Affiliate Program](#joining-the-creator-affiliate-program)
 
 This page provides information about different ways to earn on Roblox and how to [convert earned Robux to cash](#converting-earned-robux-to-cash) through the [Developer Exchange][link_developer_exchange] program.
 
@@ -29,32 +30,33 @@ This page provides information about different ways to earn on Roblox and how to
 
 ## Economy Powered by Creators
 
-We are building one of the world's largest immersive platforms with 77.7M global daily active users (DAUs) in 16 languages across 190 countries, available across platforms including mobile, desktop, consoles, and VR headsets. In 2023, more than 58% of our daily active users were 13 and over, and users aged 17 and over accounted for 42% of our daily active users. In 2023, our community visited over 13 million experiences, and in the first quarter of 2024 alone, users spent 16.7 billion hours on our platform.
+We are building one of the world's largest immersive platforms with 79.5M global daily active users (DAUs) in 16 languages across 190 countries, available across platforms including mobile, desktop, consoles, and VR headsets. In 2023, more than 58% of our daily active users were 13 and over, and users aged 17 and over accounted for 42% of our daily active users. In 2023, our community visited over 13 million experiences, and in the second quarter of 2024 alone, users spent 17.4 billion hours on our platform.
 
 <figure>
 <img src="../assets/monetization/earning/Economy-Stats.png" width="800" alt="Roblox economy stats" />
-<figcaption>From left to right: (1) As of the quarter ended March&nbsp;31,&nbsp;2024; (2) Based on the year ended December&nbsp;31,&nbsp;2023 (3) Represents number of unique creators earning Robux during December&nbsp;2023; (4) $1.4B developer earnings by 16,500 creators registered for our [Developer Exchange](https://create.roblox.com/dashboard/devex) program during 2022 and 2023, up 57% from the previous two-year period.</figcaption>
+<figcaption>From left to right: (1) As of the quarter ended June&nbsp;30,&nbsp;2024; (2) Based on the year ended December&nbsp;31,&nbsp;2023; (3) $1.4B developer earnings by 16,500 creators registered for our [Developer Exchange](https://create.roblox.com/dashboard/devex) program during 2022 and 2023, up 57% from the previous two-year period.</figcaption>
 </figure>
 
-- <Typography variant='h5' color='primary'>We are one of the biggest virtual economies&sup1;</Typography>
-
-<figure>In 2023 alone, we had more than 3.7 billion virtual transactions, and over 1 billion during the fourth quarter of 2023. In fact, Roblox's GDP&sup2; has grown to become as large as that of some countries. During the month ended December&nbsp;2023, over 5.0M asset creators and developers who create experiences earned Robux. Our success is directly tied to the success of our creators. Roblox earns money by selling Robux which users spend in-experience and on items and assets in our marketplaces, all created by you.</figure>
-
-- <Typography variant='h5' color='primary'>We exist to serve our community</Typography>
-
-<figure>We're always searching for new ways to increase creators' earnings. In 2022 and 2023, our creator community earned $624 million and $741 million, respectively. This combined figure of ~$1.4 billion is up 57% over the previous two years.</figure>
-
-- <Typography variant='h5' color='primary'>As a result, creators can focus on creating</Typography>
-
-<figure>We are seeing healthy growth across creators and studios of varying sizes. Since 2019, the average annual earnings of the top 10 and top 1000 creators have increased ~4.5&times; and ~5.75&times;, respectively. As of December&nbsp;2023, 35% of our top 1000 experiences were created in 2023.&sup3;</figure>
+<figure>
+<h5>We are one of the biggest virtual economies&sup1;</h5>
+In 2023 alone, we had more than 3.7 billion virtual transactions, and over 1 billion during the fourth quarter of 2023. In fact, Roblox's GDP&sup2; has grown to become as large as that of some countries. Our success is directly tied to the success of our creators. Roblox earns money by selling Robux which users spend in-experience and on items and assets in our marketplaces, all created by you.
+</figure>
 
 <figure>
+<h5>We exist to serve our community</h5>
+We're always searching for new ways to increase creators' earnings. In 2022 and 2023, our creator community earned $624 million and $741 million, respectively. This combined figure of ~$1.4 billion is up 57% over the previous two years.
+</figure>
+
+<figure>
+<h5>As a result, creators can focus on creating</h5>
+We are seeing healthy growth across creators and studios of varying sizes. Since 2019, the average annual earnings of the top 10 and top 1000 creators have increased ~5.0&times; and ~6.0&times;, respectively. As of December&nbsp;2023, 35% of our top 1000 experiences were created in 2023.&sup3;<br /><br />
+
 <img src="../assets/monetization/earning/Monetization-Growth-CAGR.png" width="800" />
 </figure>
 
 <figcaption><sup>1</sup> Based on readily available public data for daily or monthly active users of virtual worlds.</figcaption>
 <figcaption><sup>2</sup> Defined as Roblox annual bookings, which measures total economic activity on our platform.</figcaption>
-<figcaption><sup>3</sup> ~17K creators of the 25 million creators monetizing on Roblox made over $650 on Roblox in the last twelve months ended March&nbsp;31,&nbsp;2024. Growth compares LTM data against FY&nbsp;2019 data.</figcaption>
+<figcaption><sup>3</sup> Of the millions of creators monetizing on Roblox, around 20,000 are part of our Devex program with the median creator receiving $1,645 USD during the twelve months ended June&nbsp;30,&nbsp;2024.</figcaption>
 
 ## Developing an Experience
 
@@ -62,21 +64,25 @@ Building successful content takes time and effort, but there is low risk and no 
 
 ### No Upfront Costs; Publish Globally in Seconds
 
-- <Typography variant='h5' color='primary'>Instant publishing to reach a global audience</Typography>
+<figure>
+<h5>Instant publishing to reach a global audience</h5>
+Unlike other platforms where you wait days or weeks for approvals, you can modify your Roblox experiences and publish immediately in multiple languages and on all popular platforms&nbsp;&mdash; iOS, Android, Mac, Windows, and Xbox.
+</figure>
 
-<figure>Unlike other platforms where you wait days or weeks for approvals, you can modify your Roblox experiences and publish immediately in multiple languages and on all popular platforms&nbsp;&mdash; iOS, Android, Mac, Windows, and Xbox.</figure>
+<figure>
+<h5>Platform-driven discovery and rapid viral growth</h5>
+Our platform, with 79.5 million daily active users (DAUs) as of Q2&nbsp;2024 now able to see and join experiences with no additional downloads required, provides opportunity for rapid growth. Creators can take advantage of our organic channels, our rich social graph and network effect, seamless exploration between experiences and our cost effective [Roblox&nbsp;ads](../production/promotion/advertising-on-roblox.md).
+</figure>
 
-- <Typography variant='h5' color='primary'>Platform-driven discovery and rapid viral growth</Typography>
+<figure>
+<h5>Rapid iteration and scaling with no upfront costs</h5>
+With your content live and in front of lots of users, we provide a rapid and rich feedback loop on how users are engaging with your work. This feedback loop is facilitated both by our integrated [analytics](../production/analytics/index.md) system and by our monetization mechanisms. On the cost side, we handle infrastructure hosting, storage, customer support, localization, payment processing, moderation, and platform costs. You do not have to worry about standing up multiplayer servers or scaling them as your experience goes viral. Off Roblox, you often have to take care of these expenses and manage these operations yourself.
+</figure>
 
-<figure>Our platform, with 77.7 million daily active users (DAUs) as of Q1&nbsp;2024 now able to see and join experiences with no additional downloads required, provides opportunity for rapid growth. Creators can take advantage of our organic channels, our rich social graph and network effect, seamless exploration between experiences and our cost effective [Roblox&nbsp;ads](../production/promotion/advertising-on-roblox.md).</figure>
-
-- <Typography variant='h5' color='primary'>Rapid iteration and scaling with no upfront costs</Typography>
-
-<figure>With your content live and in front of lots of users, we provide a rapid and rich feedback loop on how users are engaging with your work. This feedback loop is facilitated both by our integrated [analytics](../production/analytics/index.md) system and by our monetization mechanisms. On the cost side, we handle infrastructure hosting, storage, customer support, localization, payment processing, moderation, and platform costs. You do not have to worry about standing up multiplayer servers or scaling them as your experience goes viral. Off Roblox, you often have to take care of these expenses and manage these operations yourself.</figure>
-
-- <Typography variant='h5' color='primary'>Pay after you earn on Roblox</Typography>
-
-<figure>On other platforms, you can incur expenses such as storage, hosting, and infrastructure before you earn any money or even start building. On Roblox, developing an experience has minimal risk as you are charged for these expenses after you monetize.</figure>
+<figure>
+<h5>Pay after you earn on Roblox</h5>
+On other platforms, you can incur expenses such as storage, hosting, and infrastructure before you earn any money or even start building. On Roblox, developing an experience has minimal risk as you are charged for these expenses after you monetize.
+</figure>
 
 ### Average Cash Payouts
 
@@ -84,65 +90,90 @@ Our goal is to drive as much money to our creators as possible while maintaining
 
 On average, 74% of all spending in experiences supports or goes to developers. The below applies to Robux spending within experiences only; it excludes developer subscriptions which are a relatively small portion of the business today.
 
-- We pay out 45% to cover costs supporting experiences&nbsp;&mdash; like infrastructure hosting, storage, customer support, localization, payment processing, and moderation&nbsp;&mdash; which other platforms generally pass on to developers.
+- We pay out 43% to cover costs supporting experiences&nbsp;&mdash; like infrastructure hosting, storage, customer support, localization, payment processing, and moderation&nbsp;&mdash; which other platforms generally pass on to developers.
 - This enables us to return 29%\* directly to the developers.
-- That leaves 26% to cover Roblox's ongoing services and operating costs, future-looking investments in the platform, and margins.
+- That leaves 30% to cover Roblox's ongoing services and operating costs, future-looking investments in the platform, and margins.
 
 This chart illustrates the estimated utilization of each dollar spent in an experience on Roblox. Note that the chart doesn't reflect our expenses as disclosed in our GAAP financial statements.
 
 <figure>
-<img src="../assets/monetization/earning/Average-Cash-Payouts.png" width="80%" alt="Pie chart illustrating the estimated utilization of each dollar spent in an experience on Roblox." />
+<img src="../assets/monetization/earning/Average-Cash-Payouts.png" width="75%" alt="Pie chart illustrating the estimated utilization of each dollar spent in an experience on Roblox." />
 </figure>
 
+<Grid container spacing={1}>
+<Grid item xs={2}>
+<Chip label="25%" size="large" style={{backgroundColor:"#00a2ff",color:"white",fontSize:"115%",width:"100%"}} />
+</Grid>
+<Grid item xs={10}>
+<Chip label="Developer Share – Developer Exchange" size="large" color="primary" variant="outlined" style={{fontSize:"105%"}}/>
+</Grid>
+</Grid>
 <figure>
-<Grid container spacing={2}>
-<Grid item xs={2}>
-<Chip label="25%" size="large" style={{backgroundColor:"#00a2ff;",fontSize:"120%;",color:"white;",width:"100%;"}} />
-</Grid>
-<Grid item xs={10}>
-<Typography variant='h6' color='primary' style={{lineHeight:"38px;"}}>Developer Share – Developer Exchange</Typography><br />
 <p>This percentage is the experience developer's earnings based on transactions in the experience, after cashing out through our [Developer Exchange][Link_Developer_Exchange] program (before any developer spending on the Roblox platform for services such as ads). Each developer's earnings share may differ.</p>
-</Grid>
+</figure>
+
+<Grid container spacing={1}>
 <Grid item xs={2}>
-<Chip label="4%" size="large" style={{backgroundColor:"#00a2ff;",fontSize:"120%;",color:"white;",width:"100%;"}} />
+<Chip label="4%" size="large" style={{backgroundColor:"#00a2ff",color:"white",fontSize:"115%",width:"100%"}} />
 </Grid>
 <Grid item xs={10}>
-<Typography variant='h6' color='primary' style={{lineHeight:"38px;"}}>Developer Share – Engagement-Based Payouts (EBP)</Typography><br />
+<Chip label="Developer Share – Engagement-Based Payouts (EBP)" size="large" color="primary" variant="outlined" style={{fontSize:"105%"}}/>
+</Grid>
+</Grid>
+<figure>
 <p>Developers also get extra Robux for simply building an engaging experience through the [Engagement-Based Payouts](../production/monetization/engagement-based-payouts.md) feature. Roblox calculates payout based on the share of time a [Premium][Link_Premium_Membership] subscriber spends in your experience as a way to reward engaging experiences.</p>
 <p>This percentage reflects our platform average, though the actual percent of earnings from EBP varies from experience to experience based on the engagement level in the experience.</p>
 <p>We are a platform and therefore we do not make experiences that compete with our creators for these payouts.</p>
-</Grid>
+</figure>
+
+<Grid container spacing={1}>
 <Grid item xs={2}>
-<Chip label="23%" size="large" style={{backgroundColor:"#00a2ff;",fontSize:"120%;",color:"white;",width:"100%;"}} />
+<Chip label="23%" size="large" style={{backgroundColor:"#00a2ff",color:"white",fontSize:"115%",width:"100%"}} />
 </Grid>
 <Grid item xs={10}>
-<Typography variant='h6' color='primary' style={{lineHeight:"38px;"}}>App Stores & Payment Processing Fees</Typography><br />
+<Chip label="App Stores & Payment Processing Fees" size="large" color="primary" variant="outlined" style={{fontSize:"105%"}}/>
+</Grid>
+</Grid>
+<figure>
 <p>Roblox covers this on your behalf. This reflects the processing payment fees related to all purchases and refunds of Robux. These fees are paid directly to Apple (iOS), Google and Amazon (Android), Sony, Meta, and Microsoft (Xbox and Microsoft Store).</p>
 <p>These costs also include processing fees associated with other payment methods, such as credit card or PayPal, as well as costs associated with the sale of our prepaid cards.</p>
 <p>If you developed outside of Roblox, you may have to cover these fees on your own and manage chargebacks and fraud and process refunds.</p>
-</Grid>
+</figure>
+
+<Grid container spacing={1}>
 <Grid item xs={2}>
-<Chip label="22%" size="large" style={{backgroundColor:"#00a2ff;",fontSize:"120%;",color:"white;",width:"100%;"}} />
+<Chip label="20%" size="large" style={{backgroundColor:"#00a2ff",color:"white",fontSize:"115%",width:"100%"}} />
 </Grid>
 <Grid item xs={10}>
-<Typography variant='h6' color='primary' style={{lineHeight:"38px;"}}>Platform Hosting & Support</Typography><br />
+<Chip label="Platform Hosting & Support" size="large" color="primary" variant="outlined" style={{fontSize:"105%"}}/>
+</Grid>
+</Grid>
+<figure>
 <p>Roblox covers this on your behalf. These costs relate to Roblox's maintenance of the servers that host all Roblox experiences, as well as platform-wide customer support, user and experience moderation, user acquisition, translation, and local compliance. If you develop outside of Roblox, you may have to pay for hosting, servers, moderation, and customer service on your own. You also have to dedicate time to managing these services; on Roblox you can focus on building your experience.</p>
-</Grid>
+</figure>
+
+<Grid container spacing={1}>
 <Grid item xs={2}>
-<Chip label="18%" size="large" style={{backgroundColor:"#004F80;",fontSize:"120%;",color:"white;",width:"100%;"}} />
+<Chip label="17%" size="large" style={{backgroundColor:"#004F80",color:"white",fontSize:"115%",width:"100%"}} />
 </Grid>
 <Grid item xs={10}>
-<Typography variant='h6' color='primary' style={{lineHeight:"38px;"}}>Platform Investment</Typography><br />
+<Chip label="Platform Investment" size="large" color="primary" variant="outlined" style={{fontSize:"105%"}}/>
+</Grid>
+</Grid>
+<figure>
 <p>These costs relate to future-looking investments in the Roblox platform. This includes investments in the people building out new capabilities and tools for our platform which will allow you to be more innovative, build more engaging experiences, help bring in new users, and make creating on Roblox much easier.</p>
-</Grid>
+</figure>
+
+<Grid container spacing={1}>
 <Grid item xs={2}>
-<Chip label="9%" size="large" style={{backgroundColor:"#004F80;",fontSize:"120%;",color:"white;",width:"100%;"}} />
+<Chip label="13%" size="large" style={{backgroundColor:"#004F80",color:"white",fontSize:"115%",width:"100%"}} />
 </Grid>
 <Grid item xs={10}>
-<Typography variant='h6' color='primary' style={{lineHeight:"38px;"}}>Roblox Share</Typography><br />
+<Chip label="Roblox Share" size="large" color="primary" variant="outlined" style={{fontSize:"105%"}}/>
+</Grid>
+</Grid>
+<figure>
 <p>Roblox uses some of this to cover ongoing services and operating costs.</p>
-</Grid>
-</Grid>
 </figure>
 
 <figure>
@@ -184,13 +215,13 @@ As follows is an overview of our commission structure. To learn more about fees 
 <TabItem label="3D Avatar Assets">
 <Grid container spacing={3}>
 <Grid item xs={12} lg={7}>
-<Typography variant='h6' color='primary'>In-Experience Purchase</Typography>
+<h5>In-Experience Purchase</h5>
 
 - Creator receives **30%**
 - Affiliate (experience owner) receives **40%**
 - Platform receives **30%**
 
-<Typography variant='h6' color='primary'>Marketplace Purchase</Typography>
+<h5>Marketplace Purchase</h5>
 
 - Creator of the virtual item receives **30%**
 - Affiliate (Roblox) receives **40%**
@@ -226,6 +257,23 @@ After purchasing a Limited, there is up to a 30‑day holding period when the it
 
 You can create and sell Studio [plugins](../studio/plugins.md) to the creator community through the [Creator Store](../production/creator-store.md). A plugin is an extension that adds additional features or functionality to [Roblox Studio](../studio/index.md) and helps improve creator workflows. You can either offer plugins for free or sell them for a minimum of $4.99 USD. Roblox offers a market-leading revenue share for these sales, as only taxes and payment processing fees are deducted. For more information, see [Selling on the Creator Store](../production/selling-on-creator-store.md).
 
+## Joining the Creator Affiliate Program
+
+<Alert severity="info">
+To join the Creator Affiliate Program, you must be 13+ and reside in a country supported by the [Developer Exchange][link_developer_exchange] program.
+</Alert>
+
+The [Creator Affiliate Program](https://create.roblox.com/affiliate) is a pilot program that lets you earn Robux using affiliate links. With it, you can:
+
+- Generate affiliate share links for any Roblox experience, including other developers' experiences, through the Creator Hub.
+- Promote your affiliate links off-platform on social media channels.
+- Earn revenue in Robux whenever new users create a Roblox account and purchase Robux using your affiliate link. A new user is someone who doesn't already have an alternative Roblox account.
+- Exchange your Robux earnings for real-world money using the Developer Exchange program.
+
+When a user creates a Roblox account using your affiliate link and then buys Robux, you can receive up to 50% of the value of their Robux purchases during their first six months on the platform, for a maximum revenue of $100 USD per new user. For example, if a new user joins Roblox and purchases $100 USD of Robux, you can earn up to $50 USD, minus certain fees like taxes and VAT.
+
+You receive your revenue in Robux, which you can exchange for real-world money through Developer Exchange.
+
 ## Converting Earned Robux to Cash
 
 Once you earn Robux, you can continue to use it in our platform to buy developer assets, plugins, [advertising](../production/promotion/advertising-on-roblox.md), in-experience items, or virtual items. In addition, when you have at least 30,000 earned Robux in your account, you may be eligible to exchange your earned Robux for real currency using the [Developer Exchange][link_developer_exchange] program.
@@ -246,7 +294,7 @@ Every platform reports their creator share a bit differently. When you compare c
 - **Other platform benefits** &mdash; Creator shares can be high but consider other benefits that the platform provides such as costs that they are paying on your behalf, the scale and diversity of their audience, the devices/platforms they are available on, the types of creators that are earning, and more.
 - **The total size of the payout pool** &mdash; Understand the total size of the platform's payout pool. Other platforms may invest less in growing their user base and more on making their products accessible in new markets across the globe. This may allow them to pay developers a higher share, but at the expense of slower growth and less total earnings being put in creators' pockets.
 </AccordionDetails>
-  </BaseAccordion>
+</BaseAccordion>
 
 <BaseAccordion>
 <AccordionSummary>

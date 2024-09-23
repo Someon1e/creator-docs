@@ -525,11 +525,6 @@ navigation:
         type: engineapi
         source: /reference/engine/classes/Clothing.yaml
         ignoreTranslation: true
-      - title: CloudCRUDService
-        path: /reference/engine/classes/CloudCRUDService
-        type: engineapi
-        source: /reference/engine/classes/CloudCRUDService.yaml
-        ignoreTranslation: true
       - title: Clouds
         path: /reference/engine/classes/Clouds
         type: engineapi
@@ -855,6 +850,11 @@ navigation:
         type: engineapi
         source: /reference/engine/classes/EditableMesh.yaml
         ignoreTranslation: true
+      - title: EditableService
+        path: /reference/engine/classes/EditableService
+        type: engineapi
+        source: /reference/engine/classes/EditableService.yaml
+        ignoreTranslation: true
       - title: EmotesPages
         path: /reference/engine/classes/EmotesPages
         type: engineapi
@@ -1110,6 +1110,11 @@ navigation:
         type: engineapi
         source: /reference/engine/classes/HandlesBase.yaml
         ignoreTranslation: true
+      - title: HapticEffect
+        path: /reference/engine/classes/HapticEffect
+        type: engineapi
+        source: /reference/engine/classes/HapticEffect.yaml
+        ignoreTranslation: true
       - title: HapticService
         path: /reference/engine/classes/HapticService
         type: engineapi
@@ -1119,11 +1124,6 @@ navigation:
         path: /reference/engine/classes/Hat
         type: engineapi
         source: /reference/engine/classes/Hat.yaml
-        ignoreTranslation: true
-      - title: HeatmapService
-        path: /reference/engine/classes/HeatmapService
-        type: engineapi
-        source: /reference/engine/classes/HeatmapService.yaml
         ignoreTranslation: true
       - title: HeightmapImporterService
         path: /reference/engine/classes/HeightmapImporterService
@@ -2329,6 +2329,11 @@ navigation:
         path: /reference/engine/classes/StarterPlayerScripts
         type: engineapi
         source: /reference/engine/classes/StarterPlayerScripts.yaml
+        ignoreTranslation: true
+      - title: StartPageService
+        path: /reference/engine/classes/StartPageService
+        type: engineapi
+        source: /reference/engine/classes/StartPageService.yaml
         ignoreTranslation: true
       - title: StartupMessageService
         path: /reference/engine/classes/StartupMessageService
@@ -3743,6 +3748,11 @@ navigation:
         type: engineapi
         source: /reference/engine/enums/DeviceFeatureType.yaml
         ignoreTranslation: true
+      - title: DeviceLevel
+        path: /reference/engine/enums/DeviceLevel
+        type: engineapi
+        source: /reference/engine/enums/DeviceLevel.yaml
+        ignoreTranslation: true
       - title: DeviceType
         path: /reference/engine/enums/DeviceType
         type: engineapi
@@ -3817,6 +3827,11 @@ navigation:
         path: /reference/engine/enums/EasingStyle
         type: engineapi
         source: /reference/engine/enums/EasingStyle.yaml
+        ignoreTranslation: true
+      - title: EditableStatus
+        path: /reference/engine/enums/EditableStatus
+        type: engineapi
+        source: /reference/engine/enums/EditableStatus.yaml
         ignoreTranslation: true
       - title: ElasticBehavior
         path: /reference/engine/enums/ElasticBehavior
@@ -3963,6 +3978,11 @@ navigation:
         type: engineapi
         source: /reference/engine/enums/GraphicsMode.yaml
         ignoreTranslation: true
+      - title: GraphicsOptimizationMode
+        path: /reference/engine/enums/GraphicsOptimizationMode
+        type: engineapi
+        source: /reference/engine/enums/GraphicsOptimizationMode.yaml
+        ignoreTranslation: true
       - title: GuiState
         path: /reference/engine/enums/GuiState
         type: engineapi
@@ -3977,6 +3997,11 @@ navigation:
         path: /reference/engine/enums/HandlesStyle
         type: engineapi
         source: /reference/engine/enums/HandlesStyle.yaml
+        ignoreTranslation: true
+      - title: HapticEffectType
+        path: /reference/engine/enums/HapticEffectType
+        type: engineapi
+        source: /reference/engine/enums/HapticEffectType.yaml
         ignoreTranslation: true
       - title: HighlightDepthMode
         path: /reference/engine/enums/HighlightDepthMode
@@ -4087,6 +4112,11 @@ navigation:
         path: /reference/engine/enums/InputType
         type: engineapi
         source: /reference/engine/enums/InputType.yaml
+        ignoreTranslation: true
+      - title: Intent
+        path: /reference/engine/enums/Intent
+        type: engineapi
+        source: /reference/engine/enums/Intent.yaml
         ignoreTranslation: true
       - title: InterpolationThrottlingMode
         path: /reference/engine/enums/InterpolationThrottlingMode
@@ -4318,6 +4348,11 @@ navigation:
         type: engineapi
         source: /reference/engine/enums/NormalId.yaml
         ignoreTranslation: true
+      - title: NotificationButtonType
+        path: /reference/engine/enums/NotificationButtonType
+        type: engineapi
+        source: /reference/engine/enums/NotificationButtonType.yaml
+        ignoreTranslation: true
       - title: OperationType
         path: /reference/engine/enums/OperationType
         type: engineapi
@@ -4392,6 +4427,11 @@ navigation:
         path: /reference/engine/enums/PartType
         type: engineapi
         source: /reference/engine/enums/PartType.yaml
+        ignoreTranslation: true
+      - title: PathfindingUseImprovedSearch
+        path: /reference/engine/enums/PathfindingUseImprovedSearch
+        type: engineapi
+        source: /reference/engine/enums/PathfindingUseImprovedSearch.yaml
         ignoreTranslation: true
       - title: PathStatus
         path: /reference/engine/enums/PathStatus
@@ -4522,6 +4562,11 @@ navigation:
         path: /reference/engine/enums/ProximityPromptStyle
         type: engineapi
         source: /reference/engine/enums/ProximityPromptStyle.yaml
+        ignoreTranslation: true
+      - title: Quality
+        path: /reference/engine/enums/Quality
+        type: engineapi
+        source: /reference/engine/enums/Quality.yaml
         ignoreTranslation: true
       - title: QualityLevel
         path: /reference/engine/enums/QualityLevel
@@ -5197,6 +5242,21 @@ navigation:
         path: /reference/engine/enums/VRComfortSetting
         type: engineapi
         source: /reference/engine/enums/VRComfortSetting.yaml
+        ignoreTranslation: true
+      - title: VRControllerModelMode
+        path: /reference/engine/enums/VRControllerModelMode
+        type: engineapi
+        source: /reference/engine/enums/VRControllerModelMode.yaml
+        ignoreTranslation: true
+      - title: VRDeviceType
+        path: /reference/engine/enums/VRDeviceType
+        type: engineapi
+        source: /reference/engine/enums/VRDeviceType.yaml
+        ignoreTranslation: true
+      - title: VRLaserPointerMode
+        path: /reference/engine/enums/VRLaserPointerMode
+        type: engineapi
+        source: /reference/engine/enums/VRLaserPointerMode.yaml
         ignoreTranslation: true
       - title: VRSafetyBubbleMode
         path: /reference/engine/enums/VRSafetyBubbleMode

@@ -7,7 +7,7 @@ description: |
   screen safe area. The insets are relative to the **fullscreen area**, meaning
   the rectangular region that encompasses all visible pixels on the screen.
 
-  <img src="../../../assets/engine-api/enums/ScreenInsets/Inset-Regions.png" width="840"
+  <img src="../../../assets/engine-api/enums/ScreenInsets/Inset-Regions-All.png" width="840"
   alt="Mobile device showing inset regions Fullscreen, Core UI Safe Area, and
   Device Safe Area" />
 code_samples: []
@@ -20,7 +20,7 @@ items:
       No insets are added to the fullscreen area. This mode may result in UI
       that is obscured or completely hidden by device notches and cutouts, so
       you should only use it for a `Class.ScreenGui` that contains
-      noninteractive content like background images.
+      non‑interactive content like background images.
     tags: []
     deprecation_message: ''
   - name: DeviceSafeInsets
@@ -29,9 +29,9 @@ items:
       Device safe area insets are added to the fullscreen area. The resulting
       area is guaranteed to not be occluded by any **device** screen cutouts
       such as the camera notch, although no inset is added for Roblox core UI
-      elements like the top bar buttons. As such, it's recommended that you use
-      **CoreUISafeInsets** for a `Class.ScreenGui` whose contents should remain
-      unobscured by both device cutouts **and** core screen elements.
+      elements like the top bar buttons. As a result, it's recommended that you
+      use **CoreUISafeInsets** for a `Class.ScreenGui` whose contents should
+      remain unobscured by both device cutouts **and** core screen elements.
     tags: []
     deprecation_message: ''
   - name: CoreUISafeInsets

@@ -3,7 +3,7 @@ title: Economy Events
 description: Use economy events to visualize your experience's economy and track user sources, sinks and wallets.
 ---
 
-Economy events let you track your in-experience economy, such as:
+**Economy events** let you track your in-experience economy, such as:
 
 - **Top sinks** — What do users spend in-experience resources on?
 - **Top sources** — Where do users earn resources?
@@ -94,6 +94,16 @@ AnalyticsService:LogEconomyEvent(
 ```
 
 For information on `Class.AnalyticsService` limitations, see [event tracking limitations](./event-types.md#event-tracking-limitations).
+
+## Using Custom Fields
+
+Economy events also allow breaking down on custom fields to support easier comparison between segments. For example, you can provide quest names to each event to see which ones users are making the most money from, or attach store locations to see if users prefer one location over another.
+
+You can breakdown by custom fields by using the breakdown selector.
+
+<img src="../../assets/analytics/event-types/Custom-Event-Breakdown.png" width = "40%" alt="A dropdown indicating the three custom fields you can compare across, along with standard breakdowns like age, gender, operating system and more."/>
+
+For more information, see [custom fields](./custom-fields.md).
 
 ## Using Economy to Grow Your Experience
 

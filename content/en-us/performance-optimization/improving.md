@@ -157,8 +157,8 @@ per frame on both the server and the client.
   to be or will have mechanisms that have more constraints and joints than they
   need.
 - **Overly precise collision detection** - Mesh parts have a
-  [collision fidelity](../workspace/collisions.md) property for detecting
-  collision, which offers a variety of modes with different levels of
+  `Class.MeshPart.CollisionFidelity|CollisionFidelity` property for detecting
+  collision which offers a variety of modes with different levels of
   performance impact. Precise collision detection mode for mesh parts has the
   most expensive performance cost and takes the engine longer to compute.
 
@@ -185,9 +185,10 @@ per frame on both the server and the client.
     invisible parts when possible.
   - For objects that don't require collisions, disable collisions and use box or
     hull fidelity, since the collision geometry is still stored in memory.
-  - You can render collision geometry for debug purposes in Studio using **File** > **Studio Settings** > **Studio** > **Visualization** > **Show Decomposition Geometry**.
+  - You can render collision geometry for debug purposes in Studio by toggling
+  	on **Collision&nbsp;fidelity** from the [Visualization&nbsp;Options](../studio/ui-overview.md#visualization-options) widget in the upper‑right corner of the 3D viewport.
 
-    Alternatively, apply the `CollisionFidelity=Precise` filter to the Explorer, which shows a count of all mesh parts with the precise fidelity and allows you to easily select them.
+    Alternatively, you can apply the `CollisionFidelity = Precise` filter to the [Explorer](../studio/explorer.md#property-filters) which shows a count of all mesh parts with the precise fidelity and allows you to easily select them.
 
   - For an in-depth walkthrough on how to choose a collision fidelity option that balances your precision and performance requirements, see [Set Physics and Rendering Parameters](../tutorials/environmental-art/assemble-an-asset-library.md#collisionfidelity).
 
@@ -210,26 +211,22 @@ per frame on both the server and the client.
 
 ## Physics Memory Usage
 
-Physics movement and collision detection consumes memory. Mesh parts have a [collision fidelity](../workspace/collisions.md) property that determines the approach that's used to evaluate the collision bounds of the mesh.
+Physics movement and collision detection consumes memory. Mesh parts have a `Class.MeshPart.CollisionFidelity|CollisionFidelity` property that determines the approach that's used to evaluate the collision bounds of the mesh.
 
 ### Common Problem
 
 The default and precise collision detection modes consumes significantly more memory than the two other modes with lower fidelity collision shapes.
 
-If you see high levels of memory consumption under **PhysicsParts**, you might need to explore reducing the collision fidelity of parts in your experience.
+If you see high levels of memory consumption under **PhysicsParts**, you might need to explore reducing the [collision fidelity](../workspace/collisions.md#mesh-and-solid-model-collisions) of objects in your experience.
 
 ### How to Mitigate
 
 To reduce memory used for collision fidelity:
 
-- Reduce the number of unique meshes.
-- For parts that do not need collisions, disable their collisions using by setting `CanCollide`, `CanTouch` and `CanQuery` to false.
-- Reduce fidelity of collisions, using the `Class.MeshPart.CollisionFidelity` setting. `Box` has the lowest memory overhead, and `Default` and `Precise` are generally more expensive.
-  - It's generally safe to set any small anchored part's collision fidelity to `Box`.
+- For parts that do not need collisions, disable their collisions by setting `Class.BasePart.CanCollide`, `Class.BasePart.CanTouch` and `Class.BasePart.CanQuery` to `false`.
+- Reduce fidelity of collisions using the `Class.MeshPart.CollisionFidelity|CollisionFidelity` setting. `Enum.CollisionFidelity.Box|Box` has the lowest memory overhead, and `Enum.CollisionFidelity.Default|Default` and `Enum.CollisionFidelity.Precise|Precise` are generally more expensive.
+  - It's generally safe to set any small anchored part's collision fidelity to `Enum.CollisionFidelity.Box|Box`.
   - For very complex large meshes, you may want to build your own collision mesh out of smaller objects with box collision fidelity.
-
-You can visualize the collision mesh in your environment by rendered collision
-meshes using **Show Decomposition Geometry** in Studio settings.
 
 ## Humanoids
 
@@ -337,6 +334,10 @@ same `MeshId` are handled in a single draw call when:
   draw calls. If you are finding your frame rate drops when looking at a certain
   part of the map, this can be a good signal that object density in this area is
   too high.
+
+  Objects like decals, textures, and particles don't batch well and introduce
+  additional draw calls. Pay extra attention to these object types in a scene.
+
 - **Missed Instancing Opportunities** - Often, a scene will include the same mesh
   duplicated a number of times, but each copy of the mesh has different mesh or
   texture asset IDs. This prevents instancing and can lead to unnecessary draw
@@ -351,10 +352,17 @@ same `MeshId` are handled in a single draw call when:
   takes to render. Scenes with a very large number of very complex meshes are a
   common problem, as are scenes with the `MeshPart.RenderFidelity` property set
   to `Enum.RenderFidelity.Precise` on too many meshes.
+
 - **Excessive shadow casting** - Handling shadows is an expensive process, and
   maps that contain a high number and density of light objects that cast shadows
   (or a high number and density of small parts influenced by shadows) are likely to
   have performance issues.
+
+- **High transparency overdraw** - Placing objects with partial transparency
+  near each other forces the engine to render the overlapping pixels multiple
+  times, which can hurt performance. For more information on identifying and
+  fixing this issue, see
+  [Delete Layered Transparencies](../tutorials/environmental-art/optimize-your-experience.md#delete-layered-transparencies).
 
 ### Mitigation
 
@@ -521,8 +529,9 @@ For more information on streaming options and their benefits, see [Streaming Pro
 
 ### Other Common Problems
 
-- **Asset Duplication** - A common mistake is to upload the same asset multiple times resulting in different asset IDs. This can lead to the same content being loaded into memory multiple times.
+- **Asset duplication** - A common mistake is to upload the same asset multiple times resulting in different asset IDs. This can lead to the same content being loaded into memory multiple times.
 - **Excessive asset volume** - Even when assets are not identical, there are cases when opportunities to reuse the same asset and save memory are missed.
+- **Audio files** - Audio files can be a surprising contributor to memory usage, particularly if you load all of them into the client at once rather than only loading what you need for a portion of the experience. For strategies, see [Load Times](#load-times).
 - **High resolution textures** - Graphics memory consumption for a texture is unrelated to the size of the texture on the disk, but rather the number of pixels in the texture.
   - For example, a 1024x1024 pixel texture consumes four times the graphics memory of a 512x512 texture.
   - Images uploaded to Roblox are transcoded to a fixed format, so there is no memory benefit to uploading images in a color model associated with fewer bytes per pixel. Though the engine automatically downscales texture resolution on some devices, the extent of the downscale depends on the device characteristics, and excessive texture resolution can still cause problems.
@@ -534,6 +543,7 @@ For more information on streaming options and their benefits, see [Streaming Pro
 - **Find and fix duplicate assets** - Look for identical mesh parts and textures that are uploaded multiple times with different IDs.
   - Though there is no API to detect similarity of assets automatically, you can collect all the image asset IDs in your place (either manually or with a script), download them, and compare them using external comparison tools.
   - For mesh parts, the best strategy is to take unique mesh IDs and organize them by size to manually identify duplicates.
+  - Instead of using separate textures for different colors, upload a single texture and use the `Class.SurfaceAppearance.Color` property to apply various tints to it.
 - **Importing assets in map separately** - Instead of importing an entire map at once, import and reconstruct assets in the map individually and reconstruct them. The 3D importer doesn't do any de-duplication of meshes, so if you were to import a large map with a lot of separate floor tiles, each of those tiles would be imported as a separate asset (even if they are duplicates). This can lead to performance and memory issues down the line, as each mesh is treated as individually and takes up memory and draw calls.
 - **Limit the pixels of images** to no more than the necessary amount. Unless an image is occupying a large amount of physical space on the screen, it usually needs at most 512x512 pixels. Most minor images should be smaller than 256x256 pixels.
 - **Use Trim Sheets** to ensure maximum texture reuse in 3D maps. For steps and examples on how to create trim sheets, see [Creating Trim Sheets](../resources/beyond-the-dark/building-architecture.md#creating-trim-sheets).
